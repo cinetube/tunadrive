@@ -2,6 +2,7 @@
   "name": "save2drive",
   "version": "0.0.0",
   "private": true,
+  "main":"app.js",
   "scripts": {
     "start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
     "stop":  "forever stop app.js"
