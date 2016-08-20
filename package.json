@@ -2,10 +2,10 @@
   "name": "save2drive",
   "version": "0.0.0",
   "private": true,
-  "main":"app.js",
+  "main": "app.js",
   "scripts": {
     "start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
-    "stop":  "forever stop app.js"
+    "stop": "forever stop app.js"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
@@ -22,6 +22,7 @@
     "progress-stream": "https://github.com/samundrak/progress-stream.git",
     "request": "^2.69.0",
     "serve-favicon": "~2.3.0",
-    "socketio": "^1.0.0"
+    "socketio": "^1.0.0",
+    "underscore": "^1.8.3"
   }
 }
