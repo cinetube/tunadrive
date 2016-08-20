@@ -1,6 +1,6 @@
 {
   "name": "save2drive",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "forever start --minUptime 1000 --spinSleepTime 1000 app.js",
