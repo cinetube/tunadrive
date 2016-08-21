@@ -10,7 +10,7 @@ io.on('takeYourToken',function(data){
 });
 
 io.on('userMessage',function(data){
-    $.simplyToast(data.message,data.type);
+    toastr[data.type](data.message);
 });
 var fileList = new Vue({
     el: "#files",
@@ -37,7 +37,7 @@ var fileList = new Vue({
             }
 
             this.$http.get(url)
-                .then(response => {
+                .then(function(response){
                     if (response.data.success) {
                         response.data.data.url =  this.file_url;
                         response.data.data.type = response.data.data['content-type'];
@@ -54,7 +54,7 @@ var fileList = new Vue({
                         this.$set('file_url', '');
                     } else {
                         this.$set('message', response.data.data);
-                        $.simplyToast(response.data.data,'warning');
+                        toastr['warning'](response.data.data);
                     }
                     this.loading  = false;
                 });
@@ -69,7 +69,7 @@ var fileList = new Vue({
     },
     created(){
         this.$http.get('/api/lists',{})
-            .then(response =>{
+            .then(function(response){
                 this.$set('loading',false);
                 console.log(response.data)
                 if(response.data.success){
