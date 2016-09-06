@@ -4,14 +4,14 @@ block content
 	#div.alert.alert-info
 		div
 			span.glyphicon.glyphicon-bell
-			span 	HELLO IF THIS IS YOUR FIRST TIME, PLEASE AUTHENTICATE -VED
+			span 	HELLO! IF THIS IS YOUR FIRST TIME, PLEASE AUTHENTICATE  -VED
 			a.btn.btn-default(style="margin-left:10px;" href="/authenticate").glyphicon.glyphicon-user 	Authenticate
 	#files.row
 		.col-md-12
 			ul.list-group
 				li.list-group-item.active
 					span.glyphicon.glyphicon-asterisk
-					span 	File will be uploaded GOOGLE DRIVE
+					span 	FILE WILL BE UPLOADED TO GOOGLE DRIVE
 				li.list-group-item(v-if="!loading && fileDetails.length")
 						div(v-for="file in fileDetails" )
 							.row
@@ -98,17 +98,17 @@ block content
 						a(href="http://bit.ly" target="_blank")  Click Here to Shorten
 				li.list-group-item
 					span.glyphicon.glyphicon-plus
-					span  You can Upload multiple files and just close the tab
+					span  YOU CAN UPLOAD MULTIPLE FILES AT ONCE
 				li.list-group-item
 					span.glyphicon.glyphicon-plus
-					span  OUR HIGH SPEED SERVERS PROVIDE CLOSE TO 35 MBPS SPEEDS
+					span  OUR HIGH SPEED SERVERS PROVIDE CLOSE TO 35 MBPS SPEEDS, ALSO THERE IS NO LIMITATION ON FILE SIZE!!!
 				li.list-group-item
 					span.glyphicon.glyphicon-plus
-					span  If you see no response then Authenticate once again
+					span  IF YOU ENCOUNTER AUTHENTICATION ERROR, AUTHENTICATE ONCE AGAIN
 				li.list-group-item
 					.alert.alert-warning
 						span.glyphicon.glyphicon-plus
-						span  You can close the tab once the uploading is started and forget about it, the file will be uploaded but rembember you will not see upload status next time you visit this page again.
+						span  EVEN IF YOU CLOSE THE TAB, THE FILE WILL CONTINUE BEING UPLOADED TO DRIVE
 				li.list-group-item
 					.alert.alert-danger
 						span.glyphicon.glyphicon-plus
